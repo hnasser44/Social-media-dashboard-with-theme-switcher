@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js" defer></script>
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body class="bg-white dark:bg-veryDarkBlue">
+
+  <main class="m-6 mt-8 lg:ml-40 lg:mr-40 lg:mt-10">
+    
+
+    <header class="lg:flex lg:items-start lg:justify-between">
+      <div class="border-b-[1px] border-b-darkGrayishBlue pb-5 lg:border-b-0">
+        <h1 class="text-veryDarkBlue dark:text-white font-bold text-2xl lg:text-3xl">Social Media Dashboard</h1>
+        <h2 class="text-darkGrayishBlue font-bold mt-0.5 dark:text-desaturatedBlue dark:font-normal">Total Followers: 23,004</h2>
+      </div>
+      <div class="mt-5 flex items-center justify-between gap-5">
+        <span class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue dark:font-normal">Dark Mode</span>
+        <div class="bg-lightToggle w-14 h-6 rounded-3xl flex items-center justify-end dark:bg-gradient-to-r from-darkToggle1 to-darkToggle2 cursor-pointer themeSwitch">
+          <div class="rounded-full w-[18px] h-[18px] bg-white mr-1 dark:bg-veryDarkBlue"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-12 flex flex-col justify-center gap-7 xl:flex-row xl:items-start xl:justify-start">
+      <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue p-8 flex flex-col items-center justify-center gap-4 border-t-4 border-t-facebook rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100 lg:flex-1">
+        <div class="flex items-center justify-center gap-4">
+          <img src="/images/icon-facebook.svg" alt="" class="w-6 h-6">
+          <span class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">@nathanf</span>
+        </div>
+        <h1 class="font-bold text-6xl mt-2 dark:text-white">1987</h1>
+        <h2 class="tracking-[5px] mt-[-0.5rem] text-darkGrayishBlue dark:text-desaturatedBlue">FOLLOWERS</h2>
+        <div class="flex items-center justify-center gap-2">
+          <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+          <span class="text-limeGreen font-bold">12 Today</span>
+        </div>
+      </div>
+
+      <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue p-8 flex flex-col items-center justify-center gap-4 border-t-4 border-t-twitter rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100 lg:flex-1">
+        <div class="flex items-center justify-center gap-4">
+          <img src="/images/icon-twitter.svg" alt="" class="w-6 h-6">
+          <span class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">@nathanf</span>
+        </div>
+        <h1 class="font-bold text-6xl mt-2 dark:text-white">1044</h1>
+        <h2 class="tracking-[5px] mt-[-0.5rem] text-darkGrayishBlue dark:text-desaturatedBlue">FOLLOWERS</h2>
+        <div class="flex items-center justify-center gap-2">
+          <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+          <span class="text-limeGreen font-bold">99 Today</span>
+        </div>
+      </div>
+
+      <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue p-8 flex flex-col items-center justify-center gap-4 border-t-4 rounded-md instagram cursor-pointer hover:bg-hovercard transition-all ease-out delay-100 lg:flex-1">
+        <div class="flex items-center justify-center gap-4">
+          <img src="/images/icon-instagram.svg" alt="" class="w-6 h-6">
+          <span class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">@realnathanf</span>
+        </div>
+        <h1 class="font-bold text-6xl mt-2 dark:text-white">11k</h1>
+        <h2 class="tracking-[5px] mt-[-0.5rem] text-darkGrayishBlue dark:text-desaturatedBlue">FOLLOWERS</h2>
+        <div class="flex items-center justify-center gap-2">
+          <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+          <span class="text-limeGreen font-bold">1099 Today</span>
+        </div>
+      </div>
+
+      <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue p-8 flex flex-col items-center justify-center gap-4 border-t-4 border-t-youtube rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100 lg:flex-1">
+        <div class="flex items-center justify-center gap-4">
+          <img src="/images/icon-youtube.svg" alt="" class="w-6 h-6">
+          <span class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Nathan F.</span>
+        </div>
+        <h1 class="font-bold text-6xl mt-2 dark:text-white">8239</h1>
+        <h2 class="tracking-[5px] mt-[-0.5rem] text-darkGrayishBlue dark:text-desaturatedBlue">SUBSCRIBERS</h2>
+        <div class="flex items-center justify-center gap-2">
+          <img src="/images/icon-down.svg" alt="" class="w-3 h-2">
+          <span class="text-brightRed font-bold">99 Today</span>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section class="mt-12">
+      <h1 class="text-darkGrayishBlue font-bold text-2xl dark:text-white">Overview - Today</h1>
+      <div class="mt-6 flex flex-col justify-center gap-5 xl:grid xl:grid-cols-4 xl:gap-8">
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+
+          <div class="flex items-center justify-between flex-row-reverse">
+            <img src="/images/icon-facebook.svg" alt="" class="w-6 h-6">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Page Views</h3>
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">87</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-limeGreen">3%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+          <div class="flex items-center justify-between">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Likes</h3>
+            <img src="/images/icon-facebook.svg" alt="" class="w-6 h-6">
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">52</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-down.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-brightRed">2%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+          <div class="flex items-center justify-between">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Likes</h3>
+            <img src="/images/icon-instagram.svg" alt="" class="w-6 h-6">
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">5462</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-limeGreen">2257%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+          <div class="flex items-center justify-between">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Profile Views</h3>
+            <img src="/images/icon-instagram.svg" alt="" class="w-6 h-6">
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">52k</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-limeGreen">1375%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+          <div class="flex items-center justify-between">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Retweets</h3>
+            <img src="/images/icon-twitter.svg" alt="" class="w-6 h-6">
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">117</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-limeGreen">303%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+          <div class="flex items-center justify-between">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Likes</h3>
+            <img src="/images/icon-twitter.svg" alt="" class="w-6 h-6">
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">507</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-up.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-limeGreen">553%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+          <div class="flex items-center justify-between">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Likes</h3>
+            <img src="/images/icon-youtube.svg" alt="" class="w-6 h-6">
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">107</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-down.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-brightRed">19%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grayishBlue dark:bg-darkDesaturatedBlue dark:text-white p-7 flex flex-col justify-center gap-7 rounded-md cursor-pointer hover:bg-hovercard transition-all ease-out delay-100">
+          <div class="flex items-center justify-between">
+            <h3 class="text-darkGrayishBlue font-bold dark:text-desaturatedBlue">Total Views</h3>
+            <img src="/images/icon-youtube.svg" alt="" class="w-6 h-6">
+          </div>
+          <div class="flex items-end justify-between">
+            <h2 class="font-bold text-4xl">1407</h2>
+            <div class="flex items-center justify-center gap-2">
+              <img src="/images/icon-down.svg" alt="" class="w-3 h-2">
+              <span class="font-bold text-brightRed">12%</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+</body>
+</html>
